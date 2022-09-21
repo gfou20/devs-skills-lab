@@ -5,11 +5,7 @@ import { skills } from '../data/skill-data.js'
 const router = Router()
 
 /* GET skills listing. */
-router.get('/', function(req, res) {
-  res.render('skills/index', {
-    skills : skills
-  })
-})
+router.get('/',)
 
 export {
   router
