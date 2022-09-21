@@ -1,10 +1,14 @@
 import { Router } from 'express'
 
+import { skills } from '../data/skill-data.js'
+
 const router = Router()
 
 /* GET skills listing. */
 router.get('/', function(req, res) {
-  res.send('Strengthen your skills!')
+  res.render('skills/index', {
+    skills : skills
+  })
 })
 
 export {
