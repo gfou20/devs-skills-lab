@@ -42,9 +42,15 @@ function show(req, res) {
   })
 }
 
+function deleteSkill(req, res) {
+  console.log('Gone yet?')
+  console.log('Guess not', req.params.id)
+}
+
 export {
   index,
   newSkill as new,
   create,
   show,
+  deleteSkill as delete
 }
