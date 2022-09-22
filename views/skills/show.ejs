@@ -9,5 +9,8 @@
 <body>
   <h1>Skills</h1>
   <h2>Skill #<%= skill._id %> </h2>
+  <h3><%= skill.text %> </h3>
+  <p>Complete: <%= skill.acquired ? 'Yes' : 'No' %> </p>
+  <a href="/skills">Return</a>
 </body>
 </html>
